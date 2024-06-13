@@ -55,10 +55,15 @@ Interactive Dashboard - https://app.powerbi.com/view?r=eyJrIjoiZWZjYmE3YjctYzE4M
 ---------
 # Findings:
 •	The average price of cars in the dataset is £16,870, with an average age of 3 years, average road tax of £120, and average mileage of 23,103 miles.
+
 •	Mercedes has the highest average price of £24,000, followed by Audi, BMW, VW, Skoda, Hyundi, Toyota and Ford, while Vauxhall has the lowest average price of £10,000.
+
 •	Petrol is the most common fuel type, accounting for 49.13% of the distribution, followed by diesel at 47.43%, and hybrid at 3.44%. Cars powered electrically and others have low significance in the distribution, depicting the need to improve technology in these areas.
+
 •	The column chart indicates that high-price brands like Mercedes and BMW have higher prices compared to their mileage, while mid-priced brands such as Audi, VW, and Skoda show a more balanced price-to-mileage ratio. Value brands like Hyundai, Toyota, Ford, and Vauxhall, particularly Vauxhall, offer better mileage for their price, emphasizing efficiency and cost-effectiveness. 
+
 •	The scattered plot shows that while there is a general trend of higher-priced car models having higher road taxes, the relationship is not strictly linear, and there are several outliers and clusters indicating variability in road tax within certain price ranges.
+
 •	The line chart shows price and mileage over the years increasing along the trend, this confirms the positive correlation seen in the scatter plot. As mileage increases, there is a general trend of price increasing as well. 
 
 While slicing through the reports with the brand logo slicer, it showed the same findings for individual brands same as the overall dataset. The lower-priced brands tend to provide better mileage, highlighting their value for consumers focused on fuel efficiency. 
