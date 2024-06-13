@@ -15,9 +15,12 @@ To ensure accuracy and the reliability of the analysis, the data was cleaned and
 I noticed the cclass and focus tables had 2 missing columns (tax and mpg) as compared to other tables and the tables were supposed to be included in the Mercedes and Ford car manufacturer’s tables respectively. I created the missing columns in cclass and focus and proceeded to merge them into their appropriate car manufacturer’s table then removed duplicates.
 With nine (9) distinct car manufacturer’s tables left, I put each tables in sheets and saved the entire dataset as a single Excel file (UK used cars consolidated). I loaded the dataset into Power BI desktop and proceeded to clean the wholesome data in power query then close and applied it.
 At the table view on power BI desktop, I created the following new columns using DAX;
- 	Age of Car – “AgeOfCar = MAX('UK used cars consolidated'[year]) - 'UK used cars consolidated'[year]”
- 	Price Per Mileage – “pricePerMileage = 'UK used cars consolidated'[price] / 'UK used cars consolidated'[mileage]”
- 	Average Price Per Model – “AvgPricePerModel = 
+ 	
+ ### Age of Car – “AgeOfCar = MAX('UK used cars consolidated'[year]) - 'UK used cars consolidated'[year]”
+ 	
+  ### Price Per Mileage – “pricePerMileage = 'UK used cars consolidated'[price] / 'UK used cars consolidated'[mileage]”
+ 
+ ### Average Price Per Model – “AvgPricePerModel = 
     AVERAGEX(
         FILTER(
             'UK used cars consolidated',
@@ -27,7 +30,8 @@ At the table view on power BI desktop, I created the following new columns using
     )”
 
 In order to import the brand logos as slicers, I created a new table, Brand Logos, where I added the logos weblink. DAX used:
-Brand Logos = 
+
+### Brand Logos = 
 UNION (
     ROW ( "Brand", "audi", "LogoURL", "https://automarken-liste.com/wp-content/uploads/2021/02/Audi-Logo-1536x1152.png" ),
     ROW ( "Brand", "bmw", "LogoURL", "http://logos-download.com/wp-content/uploads/2016/02/BMW_logo_big_transparent_png.png" ),
